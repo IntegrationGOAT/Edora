@@ -1,0 +1,269 @@
+.careers {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  border-radius: 1rem;
+  margin-bottom: 4rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+.mission {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.mission h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--heading-color);
+}
+
+.mission p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--text-color);
+}
+
+.values {
+  margin-bottom: 4rem;
+}
+
+.values h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--heading-color);
+}
+
+.valueGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.valueCard {
+  padding: 2rem;
+  background-color: var(--background-light);
+  border-radius: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.valueCard:hover {
+  transform: translateY(-5px);
+}
+
+.valueCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+
+.valueCard p {
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.benefits {
+  margin-bottom: 4rem;
+}
+
+.benefits h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--heading-color);
+}
+
+.benefitGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.benefitCard {
+  padding: 2rem;
+  background-color: var(--background-light);
+  border-radius: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.benefitCard:hover {
+  transform: translateY(-5px);
+}
+
+.benefitIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.benefitCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+
+.benefitCard p {
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.openings {
+  margin-bottom: 4rem;
+}
+
+.openings h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--heading-color);
+}
+
+.positionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.positionCard {
+  padding: 2rem;
+  background-color: var(--background-light);
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.positionCard:hover {
+  transform: translateY(-5px);
+}
+
+.positionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.positionHeader h3 {
+  font-size: 1.3rem;
+  color: var(--heading-color);
+}
+
+.type {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+}
+
+.positionMeta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.positionCard p {
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.applyButton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.applyButton:hover {
+  transform: translateY(-2px);
+}
+
+.contact {
+  text-align: center;
+  padding: 4rem;
+  background-color: var(--background-light);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.contactButton {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+  font-weight: bold;
+}
+
+.contactButton:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .positionHeader {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .positionMeta {
+    justify-content: center;
+  }
+
+  .applyButton {
+    width: 100%;
+    text-align: center;
+  }
+}

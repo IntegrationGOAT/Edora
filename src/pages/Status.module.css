@@ -1,0 +1,296 @@
+.status {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  border-radius: 1rem;
+  margin-bottom: 4rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+.overview {
+  margin-bottom: 4rem;
+}
+
+.statusHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.statusHeader h2 {
+  font-size: 2rem;
+  color: var(--heading-color);
+}
+
+.timestamp {
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.systemsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.systemCard {
+  padding: 2rem;
+  background-color: var(--background-light);
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.systemCard:hover {
+  transform: translateY(-5px);
+}
+
+.systemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.systemHeader h3 {
+  font-size: 1.2rem;
+  color: var(--heading-color);
+}
+
+.status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.operational {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.degraded {
+  background-color: #FFC107;
+  color: black;
+}
+
+.resolved {
+  background-color: #2196F3;
+  color: white;
+}
+
+.completed {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.unknown {
+  background-color: #9E9E9E;
+  color: white;
+}
+
+.systemMeta {
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.incidents {
+  margin-bottom: 4rem;
+}
+
+.incidents h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--heading-color);
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.incident {
+  padding: 2rem;
+  background-color: var(--background-light);
+  border-radius: 1rem;
+}
+
+.incidentHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.incidentHeader h3 {
+  flex: 1;
+  font-size: 1.2rem;
+  color: var(--heading-color);
+}
+
+.description {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.resolution {
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.subscribe {
+  text-align: center;
+  padding: 4rem;
+  background-color: var(--background-light);
+  border-radius: 1rem;
+  margin-bottom: 4rem;
+}
+
+.subscribe h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+
+.subscribe p {
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.subscribeForm {
+  display: flex;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.subscribeForm input {
+  flex: 1;
+  padding: 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.subscribeForm button {
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.subscribeForm button:hover {
+  transform: translateY(-2px);
+}
+
+.support {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.support h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+
+.support p {
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.supportActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.primaryButton,
+.secondaryButton {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  font-weight: bold;
+}
+
+.primaryButton {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.secondaryButton {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .statusHeader {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .incidentHeader {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .subscribeForm {
+    flex-direction: column;
+  }
+
+  .supportActions {
+    flex-direction: column;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    text-align: center;
+  }
+}

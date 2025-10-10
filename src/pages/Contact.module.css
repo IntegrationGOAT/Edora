@@ -1,0 +1,241 @@
+.contact {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  border-radius: 1rem;
+  margin-bottom: 4rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.contactInfo {
+  position: sticky;
+  top: 2rem;
+  align-self: start;
+}
+
+.infoCard {
+  background-color: var(--background-light);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.infoCard h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+
+.infoCard > p {
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.teamContact {
+  margin-bottom: 2rem;
+}
+
+.teamContact h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+
+.teamMember {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--background);
+  border-radius: 0.5rem;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.teamMember h4 {
+  margin-bottom: 0.25rem;
+  color: var(--heading-color);
+}
+
+.teamMember p {
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+}
+
+.teamMember a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.offices {
+  margin-top: 2rem;
+}
+
+.offices h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+
+.office {
+  margin-bottom: 1.5rem;
+}
+
+.office h4 {
+  color: var(--heading-color);
+  margin-bottom: 0.5rem;
+}
+
+.office p {
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+}
+
+.contactForm {
+  background-color: var(--background-light);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.contactForm h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--heading-color);
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid var(--border-color);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.submitButton:hover {
+  transform: translateY(-2px);
+}
+
+.support {
+  text-align: center;
+  padding: 4rem;
+  background-color: var(--background-light);
+  border-radius: 1rem;
+  margin-top: 4rem;
+}
+
+.support h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+
+.support p {
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.supportButton {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.supportButton:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 968px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .contactInfo {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .contactForm,
+  .infoCard {
+    padding: 1.5rem;
+  }
+}

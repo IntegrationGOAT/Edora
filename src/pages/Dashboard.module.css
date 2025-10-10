@@ -1,0 +1,250 @@
+.dashboard {
+  padding: 2rem;
+  background-color: #F3F4F6;
+  min-height: 100vh;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.searchBar {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 600px;
+}
+
+.searchBar input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #D1D5DB;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.searchBar button {
+  padding: 0.75rem 1rem;
+  background-color: #4F46E5;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.searchBar button:hover {
+  background-color: #4338CA;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.quickAccess {
+  grid-column: span 3;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.quickLinks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.quickLink {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: #F8FAFC;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.quickLink:hover {
+  background-color: #F1F5F9;
+  transform: translateY(-2px);
+}
+
+.activities, .tasks {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.activityList, .taskList {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: #6B7280;
+}
+
+.activityItem, .taskItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  background-color: #F8FAFC;
+  border-radius: 0.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.activityItem:hover, .taskItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.taskActions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.taskStatus {
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.taskStatus.pending {
+  background-color: #FEF3C7;
+  color: #92400E;
+}
+
+.taskStatus.in-progress {
+  background-color: #DBEAFE;
+  color: #1E40AF;
+}
+
+.taskStatus.not-started {
+  background-color: #F3F4F6;
+  color: #4B5563;
+}
+
+.taskStatus.completed {
+  background-color: #D1FAE5;
+  color: #065F46;
+}
+
+.activityIcon {
+  font-size: 1.5rem;
+}
+
+.activityDetails, .taskDetails {
+  flex: 1;
+}
+
+.activityDetails h3, .taskDetails h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.activityDetails span, .taskDetails span {
+  font-size: 0.75rem;
+  color: #6B7280;
+}
+
+.viewTask {
+  padding: 0.5rem 1rem;
+  background-color: #4F46E5;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.viewTask:hover {
+  background-color: #4338CA;
+}
+
+.performance {
+  grid-column: span 3;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.performanceStats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.stat {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #F8FAFC;
+  border-radius: 0.5rem;
+}
+
+.stat h4 {
+  font-size: 0.875rem;
+  color: #6B7280;
+  margin-bottom: 0.5rem;
+}
+
+.grade, .percentage, .count {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4F46E5;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quickAccess, .performance {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .dashboard {
+    padding: 1rem;
+  }
+
+  .performanceStats {
+    grid-template-columns: 1fr;
+  }
+}
