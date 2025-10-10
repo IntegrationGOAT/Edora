@@ -14,7 +14,7 @@ export const AuthProvider = ({ children }) => {
         setTimeout(() => {
           resolve({
             id: '1',
-            name: userType === 'student' ? 'Alex Student' : 
+            name: userType === 'student' ? 'Jeet Biadya' : 
                   userType === 'teacher' ? 'Mrs. Smith' : 'Admin User',
             email,
             role: userType,

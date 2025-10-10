@@ -26,12 +26,12 @@ const Contact = () => {
     {
       city: 'San Francisco',
       address: '123 Tech Street, SF, CA 94105',
-      phone: '+1 (555) 123-4567'
+      phone: '+91 9064704626 (my actual number... dont prank call plz :) )'
     },
     {
       city: 'New York',
       address: '456 Innovation Ave, NY, NY 10013',
-      phone: '+1 (555) 987-6543'
+      phone: '+91 9064704626 (my actual number... dont prank call plz :) )'
     }
   ];
 

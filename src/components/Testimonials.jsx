@@ -22,7 +22,7 @@ const Testimonials = () => {
       quote: "The analytics dashboard helps us make data-driven decisions to improve student engagement and performance.",
       author: "Emily Rodriguez",
       role: "Department Head",
-      school: "Summit Elementary"
+      school: "DPS Bal School"
     }
   ];
 
