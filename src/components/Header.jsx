@@ -16,7 +16,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link to="/" className={styles.logo}>
-          <span className={styles.logoText}>Edora</span>
+          <span className={styles.logoText}><img src="https://media.discordapp.net/attachments/1425099203780018218/1426824651044032543/1760251896947.png?ex=68eca181&is=68eb5001&hm=21b83c45bdc17593dda79bc9e8fdec19d847915af175ad14dc39d598175b4079&=&format=webp&quality=lossless&width=823&height=823" alt="" /></span>
         </Link>
 
         <button 
@@ -32,6 +32,11 @@ const Header = () => {
             <li>
               <Link to="/" className={`${styles.navLink} ${location.pathname === '/' ? styles.active : ''}`}>
                 Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/classes" className={`${styles.navLink} ${location.pathname === '/classes' ? styles.active : ''}`}>
+                Classes
               </Link>
             </li>
             <li>

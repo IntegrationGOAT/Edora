@@ -1,7 +1,21 @@
 import React from 'react';
 import styles from './Features.module.css';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Features = () => {
+   useGSAP(() => {
+      gsap.registerPlugin(useGSAP);
+        gsap.registerPlugin(ScrollTrigger);
+
+	gsap.fromTo('.cardani',{opacity:0 ,y:10}, { opacity:1 , duration:1, scale:1 ,y:0 ,stagger:0.3 ,scrollTrigger:{trigger:'.cardani',start:'1px bottom'}}); 
+
+},[]);
+
+
+
+
   const features = [
     {
       title: 'Single Sign-On',
@@ -46,7 +60,7 @@ const Features = () => {
       
       <div className={styles.grid}>
         {features.map((feature, index) => (
-          <div key={index} className={styles.feature}>
+          <div key={index} className={`${styles.feature} cardani`}>
             <div className={styles.iconContainer}>
               <span className={styles.icon}>{feature.icon}</span>
             </div>

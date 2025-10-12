@@ -15,6 +15,9 @@ import Contact from './pages/Contact';
 import Documentation from './pages/Documentation';
 import Status from './pages/Status';
 import Careers from './pages/Careers';
+import Classes from './pages/Classes';
+import SignUp from './pages/SignUp';
+
 
 function App() {
   return (
@@ -34,6 +37,8 @@ function App() {
             <Route path="/documentation" element={<Documentation />} />
             <Route path="/status" element={<Status />} />
             <Route path="/careers" element={<Careers />} />
+            <Route path="/classes" element={<Classes />} />
+            <Route path="/register" element={<SignUp />} />
             <Route 
               path="/dashboard" 
               element={

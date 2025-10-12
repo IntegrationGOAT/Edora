@@ -6,14 +6,14 @@ import { useGSAP } from '@gsap/react';
 import Subjects from './Subjects';
 
 
-const Hero = () => {
+const ClassHero = () => {
 
 
   useGSAP(() => {
 
-	gsap.fromTo('.anihero',{opacity:0 ,y:10}, { opacity:1 , duration:1, scale:1 ,y:0 ,stagger:0.5}); 
-  	gsap.fromTo('.heroimg',{opacity:0 ,x:50}, { opacity:1 , duration:1.5, scale:1 ,x:0 ,stagger:0.5}); 
-},[]);
+    gsap.fromTo('.anihero', { opacity: 0, y: 10 }, { opacity: 1, duration: 1, scale: 1, y: 0, stagger: 0.5 });
+    gsap.fromTo('.heroimg', { opacity: 0, x: 50 }, { opacity: 1, duration: 1.5, scale: 1, x: 0, stagger: 0.5 });
+  }, []);
 
 
   gsap.registerPlugin(useGSAP);
@@ -21,21 +21,13 @@ const Hero = () => {
   return (
     <section className={styles.hero} >
       <div className={styles.heroContent}>
-        <h1 className={`${styles.title } anihero` } >
-         The choice of Today <br /> The change of tomorrow <br /> Join us NOW!
+        <h1 className={`${styles.title} anihero`} >
+          The choice of Today <br /> The change of tomorrow <br /> study Now!
         </h1>
         <p className={`${styles.subtitle} anihero`}>
-          One secure platform to manage all your educational resources. 
-          Connect your school, empower teachers, and enhance student learning.
+          From Class 1 to Class 12, we offer a structured learning journey designed to match every student’s level. Each class section features age-appropriate lessons, engaging activities, and expert guidance to help learners strengthen their foundation and achieve academic excellence.
         </p>
-        <div className={`${styles.ctaContainer} anihero`}>
-          <Link to="/pricing" className={styles.primaryButton}>
-            Get Started for Free
-          </Link>
-          <Link to="/contact" className={styles.secondaryButton}>
-            Request Demo
-          </Link>
-        </div>
+
         <div className={`${styles.stats} anihero`}>
           <div className={styles.statItem}>
             <span className={styles.statNumber}>10,000+</span>
@@ -52,9 +44,9 @@ const Hero = () => {
         </div>
       </div>
       <div className={`${styles.heroImage} heroimg`}>
-        <img 
-          src="https://www.clever.com/wp-content/uploads/2024/02/Classroom-2.png" 
-          alt="Edora Platform Dashboard" 
+        <img
+          src="https://www.clever.com/wp-content/uploads/2024/02/LayeredSecurity-2.png"
+          alt="Edora Platform Dashboard"
           className={styles.dashboardImage}
         />
       </div>
@@ -62,4 +54,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default ClassHero;

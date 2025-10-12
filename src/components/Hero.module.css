@@ -1,16 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    font-family: Inter;
+}
+
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 80vh;
-  padding: 4rem 1.5rem;
-  background: linear-gradient(to bottom right, #f8faff, #e8eeff);
+  padding: 1rem 1.5rem;
+background-color: #f6fff0cb;
 }
 
 .heroContent {
   flex: 1;
   max-width: 42rem;
-  padding-right: 2rem;
+
+  margin: 0 5rem;
 }
 
 .title {
@@ -19,6 +25,8 @@
   color: #111827;
   margin-bottom: 1.5rem;
   line-height: 1.2;
+  font-family: Inter;
+
 }
 
 .subtitle {
@@ -36,30 +44,32 @@
 
 .primaryButton {
   padding: 0.75rem 2rem;
-  background-color: #4F46E5;
-  color: white;
+  background-color: #91CA6B;
+  color: #31473A;
   border-radius: 0.5rem;
   font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.2s;
+  transition: all 0.2s ease-in-out;
 }
 
 .primaryButton:hover {
-  background-color: #4338CA;
+  background-color: #abeb7d;
+  scale: 1.01;
 }
 
 .secondaryButton {
   padding: 0.75rem 2rem;
-  border: 2px solid #4F46E5;
-  color: #4F46E5;
+  border: 2px solid #91CA6B;
+  color: #8fd361;
   border-radius: 0.5rem;
   font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.2s;
+  transition: all 0.2s ease-in-out;
 }
 
 .secondaryButton:hover {
-  background-color: #F5F3FF;
+  background-color: #ffffff00;
+    scale: 1.01;
 }
 
 .stats {
@@ -76,7 +86,7 @@
 .statNumber {
   font-size: 1.875rem;
   font-weight: 700;
-  color: #4F46E5;
+  color: #31473A;
   margin-bottom: 0.25rem;
 }
 
@@ -94,7 +104,7 @@
   width: 100%;
   max-width: 42rem;
   border-radius: 0.5rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
 }
 
 @media (max-width: 1024px) {

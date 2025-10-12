@@ -1,0 +1,47 @@
+.class-container {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.class-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 700;
+}
+
+.class-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.class-card {
+ background-color: #91CA6B;
+  color: white;
+  padding: 25px 20px;
+  border-radius: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.class-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: #456133;
+}
+
+.class-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.class-card p {
+  font-size: 0.9rem;
+  opacity: 0.95;
+}

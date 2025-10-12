@@ -36,7 +36,7 @@ const Testimonials = () => {
         
         <div className={styles.grid}>
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className={styles.testimonial}>
+            <div key={testimonial.id} className={`${styles.testimonial} cardani`}>
               <div className={styles.content}>
                 <blockquote className={styles.quote}>
                   "{testimonial.quote}"

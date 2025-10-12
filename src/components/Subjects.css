@@ -1,0 +1,43 @@
+.subjects-container {
+  text-align: center;
+  padding: 4rem 1rem;
+ background-color: #f6fff0cb;
+}
+
+.subjects-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.subject-card {
+  color: #000000;
+  padding: 30px 20px;
+  border-radius: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+}
+
+.subject-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.subject-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.subject-card p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
