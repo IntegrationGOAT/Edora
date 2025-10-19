@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './About.module.css';
+import './About.css';
 
-const About = () => {
+const AboutPage = () => {
   const stats = [
     { number: '10K+', label: 'Schools' },
     { number: '1M+', label: 'Students' },
@@ -57,13 +57,13 @@ const About = () => {
   ];
 
   return (
-    <div className={styles.about}>
-      <section className={styles.hero}>
+    <div className="about">
+  <section className="hero">
         <h1>About Edora</h1>
         <p>Empowering education through technology</p>
       </section>
 
-      <section className={styles.mission}>
+  <section className="mission">
         <h2>Our Mission</h2>
         <p>
           At Edora, we believe that technology should enhance, not complicate, 
@@ -73,21 +73,21 @@ const About = () => {
         </p>
       </section>
 
-      <section className={styles.stats}>
+      <section className="stats">
         {stats.map((stat, index) => (
-          <div key={index} className={styles.statItem}>
-            <span className={styles.statNumber}>{stat.number}</span>
-            <span className={styles.statLabel}>{stat.label}</span>
+          <div key={index} className="statItem">
+            <span className="statNumber">{stat.number}</span>
+            <span className="statLabel">{stat.label}</span>
           </div>
         ))}
       </section>
 
-      <section className={styles.values}>
+      <section className="values">
         <h2>Our Values</h2>
-        <div className={styles.valueGrid}>
+        <div className="valueGrid">
           {values.map((value, index) => (
-            <div key={index} className={styles.valueItem}>
-              <span className={styles.valueIcon}>{value.icon}</span>
+            <div key={index} className="valueItem">
+              <span className="valueIcon">{value.icon}</span>
               <h3>{value.title}</h3>
               <p>{value.description}</p>
             </div>
@@ -95,13 +95,13 @@ const About = () => {
         </div>
       </section>
 
-      <section className={styles.team}>
+      <section className="team">
         <h2>Our Leadership Team</h2>
-        <div className={styles.teamGrid}>
+        <div className="teamGrid">
           {team.map((member, index) => (
-            <div key={index} className={styles.teamMember}>
-              <div className={styles.memberImage}>
-                <span className={styles.placeholderImage}>{member.name[0]}</span>
+            <div key={index} className="teamMember">
+              <div className="memberImage">
+                <span className="placeholderImage">{member.name[0]}</span>
               </div>
               <h3>{member.name}</h3>
               <p>{member.role}</p>
@@ -110,16 +110,16 @@ const About = () => {
         </div>
       </section>
 
-      <section className={styles.cta}>
+      <section className="cta">
         <h2>Join Us in Transforming Education</h2>
         <p>
           Ready to be part of the future of education technology?
         </p>
-        <div className={styles.ctaButtons}>
-          <Link to="/contact" className={styles.primaryButton}>
+        <div className="ctaButtons">
+          <Link to="/contact" className="primaryButton">
             Contact Us
           </Link>
-          <Link to="/careers" className={styles.secondaryButton}>
+          <Link to="/careers" className="secondaryButton">
             View Careers
           </Link>
         </div>
@@ -128,4 +128,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;

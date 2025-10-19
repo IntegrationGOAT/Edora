@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Features.module.css';
+import './Features.css';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -50,22 +50,22 @@ const Features = () => {
   ];
 
   return (
-    <section className={styles.features}>
-      <div className={styles.heading}>
-        <h2 className={styles.title}>Everything You Need in One Place</h2>
-        <p className={styles.subtitle}>
+    <section className="features">
+      <div className="heading">
+        <h2 className="title">Everything You Need in One Place</h2>
+        <p className="subtitle">
           Streamline your educational technology with powerful features designed for modern learning
         </p>
       </div>
       
-      <div className={styles.grid}>
+      <div className="grid">
         {features.map((feature, index) => (
-          <div key={index} className={`${styles.feature} cardani`}>
-            <div className={styles.iconContainer}>
-              <span className={styles.icon}>{feature.icon}</span>
+          <div key={index} className="feature cardani">
+            <div className="iconContainer">
+              <span className="icon">{feature.icon}</span>
             </div>
-            <h3 className={styles.featureTitle}>{feature.title}</h3>
-            <p className={styles.featureDescription}>{feature.description}</p>
+            <h3 className="featureTitle">{feature.title}</h3>
+            <p className="featureDescription">{feature.description}</p>
           </div>
         ))}
       </div>

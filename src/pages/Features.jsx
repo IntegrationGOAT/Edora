@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './Features.module.css';
+import './Features.css';
 
-const Features = () => {
+const FeaturesPage = () => {
   const features = [
     {
       title: 'Single Sign-On',
@@ -109,4 +109,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default FeaturesPage;

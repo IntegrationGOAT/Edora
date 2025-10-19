@@ -16,10 +16,20 @@
   justify-content: space-between;
 }
 
+/* Logo container */
 .logo {
-  width: 5%;
+  display: flex;
   align-items: center;
+  height: 64px;
+  margin-right: 2rem;
+}
 
+/* Logo image itself */
+.logoText img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  display: block;
 }
 
 .logoText {
@@ -37,7 +47,7 @@
 
 .navList {
   display: flex;
-  gap: 2rem;
+  gap: 1.25rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -47,9 +57,11 @@
   text-decoration: none;
   color: #4B5563;
   font-weight: 500;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.1rem;
   border-radius: 0.375rem;
   transition: all 0.2s;
+  font-size: 1.08rem;
+  letter-spacing: 0.01em;
 }
 
 .navLink:hover {
@@ -179,18 +191,5 @@
     gap: 1rem;
     width: 100%;
     text-align: center;
-  }
-
-  .auth {
-    flex-direction: column;
-    width: 100%;
-    gap: 0.5rem;
-  }
-
-  .loginButton,
-  .signupButton {
-    display: block;
-    text-align: center;
-    width: 100%;
   }
 }

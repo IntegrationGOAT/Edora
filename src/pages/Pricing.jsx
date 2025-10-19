@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Pricing.module.css';
+import './Pricing.css';
 
 const Pricing = () => {
   const plans = [

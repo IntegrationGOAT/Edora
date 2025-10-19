@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Support.module.css';
+import './Support.css';
 
 const Support = () => {
   const faqs = [
@@ -22,38 +22,38 @@ const Support = () => {
   ];
 
   return (
-    <div className={styles.support}>
-      <section className={styles.hero}>
+    <div className="support">
+  <section className="hero">
         <h1>Help Center</h1>
         <p>We're here to help you succeed</p>
       </section>
 
-      <section className={styles.quickHelp}>
+      <section className="quickHelp">
         <h2>How can we help you today?</h2>
-        <div className={styles.helpGrid}>
-          <a href="/documentation" className={styles.helpCard}>
-            <span className={styles.icon}>📚</span>
+        <div className="helpGrid">
+          <a href="/documentation" className="helpCard">
+            <span className="icon">📚</span>
             <h3>Documentation</h3>
             <p>Browse our detailed guides</p>
           </a>
-          <a href="/contact" className={styles.helpCard}>
-            <span className={styles.icon}>✉️</span>
+          <a href="/contact" className="helpCard">
+            <span className="icon">✉️</span>
             <h3>Contact Support</h3>
             <p>Get in touch with our team</p>
           </a>
-          <a href="/status" className={styles.helpCard}>
-            <span className={styles.icon}>🔔</span>
+          <a href="/status" className="helpCard">
+            <span className="icon">🔔</span>
             <h3>System Status</h3>
             <p>Check system health</p>
           </a>
         </div>
       </section>
 
-      <section className={styles.faqSection}>
+      <section className="faqSection">
         <h2>Frequently Asked Questions</h2>
-        <div className={styles.faqGrid}>
+        <div className="faqGrid">
           {faqs.map((faq, index) => (
-            <div key={index} className={styles.faqCard}>
+            <div key={index} className="faqCard">
               <h3>{faq.question}</h3>
               <p>{faq.answer}</p>
             </div>
@@ -61,14 +61,14 @@ const Support = () => {
         </div>
       </section>
 
-      <section className={styles.contact}>
+      <section className="contact">
         <h2>Still Need Help?</h2>
         <p>Our technical team led by Jeet is ready to assist you with any questions.</p>
-        <div className={styles.contactOptions}>
-          <a href="/contact" className={styles.contactButton}>
+        <div className="contactOptions">
+          <a href="/contact" className="contactButton">
             Contact Support
           </a>
-          <a href="tel:+1234567890" className={styles.contactPhone}>
+          <a href="tel:+1234567890" className="contactPhone">
             Call Us: +1 (234) 567-890
           </a>
         </div>

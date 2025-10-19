@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Testimonials.module.css';
+import './Testimonials.css';
 
 const Testimonials = () => {
   const testimonials = [
@@ -27,22 +27,22 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className={styles.testimonials}>
-      <div className={styles.container}>
-        <h2 className={styles.title}>What Educators Say</h2>
-        <p className={styles.subtitle}>
+    <section className="testimonials">
+      <div className="container">
+        <h2 className="title">What Educators Say</h2>
+        <p className="subtitle">
           Join thousands of schools that trust Edora to manage their educational technology
         </p>
         
-        <div className={styles.grid}>
+        <div className="grid">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className={`${styles.testimonial} cardani`}>
-              <div className={styles.content}>
-                <blockquote className={styles.quote}>
+            <div key={testimonial.id} className="testimonial cardani">
+              <div className="content">
+                <blockquote className="quote">
                   "{testimonial.quote}"
                 </blockquote>
-                <div className={styles.author}>
-                  <div className={styles.info}>
+                <div className="author">
+                  <div className="info">
                     <strong>{testimonial.author}</strong>
                     <span>{testimonial.role}</span>
                     <span>{testimonial.school}</span>

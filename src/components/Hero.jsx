@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Hero.module.css';
+import './Hero.css';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -19,43 +19,43 @@ const Hero = () => {
   gsap.registerPlugin(useGSAP);
 
   return (
-    <section className={styles.hero} >
-      <div className={styles.heroContent}>
-        <h1 className={`${styles.title } anihero` } >
+    <section className="hero" >
+      <div className="heroContent">
+        <h1 className="title anihero" >
          The choice of Today <br /> The change of tomorrow <br /> Join us NOW!
         </h1>
-        <p className={`${styles.subtitle} anihero`}>
+  <p className="subtitle anihero">
           One secure platform to manage all your educational resources. 
           Connect your school, empower teachers, and enhance student learning.
         </p>
-        <div className={`${styles.ctaContainer} anihero`}>
-          <Link to="/pricing" className={styles.primaryButton}>
+        <div className="ctaContainer anihero">
+          <Link to="/pricing" className="primaryButton">
             Get Started for Free
           </Link>
-          <Link to="/contact" className={styles.secondaryButton}>
+          <Link to="/contact" className="secondaryButton">
             Request Demo
           </Link>
         </div>
-        <div className={`${styles.stats} anihero`}>
-          <div className={styles.statItem}>
-            <span className={styles.statNumber}>10,000+</span>
-            <span className={styles.statLabel}>Schools</span>
+        <div className="stats anihero">
+          <div className="statItem">
+            <span className="statNumber">10,000+</span>
+            <span className="statLabel">Schools</span>
           </div>
-          <div className={styles.statItem}>
-            <span className={styles.statNumber}>1M+</span>
-            <span className={styles.statLabel}>Students</span>
+          <div className="statItem">
+            <span className="statNumber">1M+</span>
+            <span className="statLabel">Students</span>
           </div>
-          <div className={styles.statItem}>
-            <span className={styles.statNumber}>500+</span>
-            <span className={styles.statLabel}>Apps Integrated</span>
+          <div className="statItem">
+            <span className="statNumber">500+</span>
+            <span className="statLabel">Apps Integrated</span>
           </div>
         </div>
       </div>
-      <div className={`${styles.heroImage} heroimg`}>
+      <div className="heroImage heroimg">
         <img 
           src="https://www.clever.com/wp-content/uploads/2024/02/Classroom-2.png" 
           alt="Edora Platform Dashboard" 
-          className={styles.dashboardImage}
+          className="dashboardImage"
         />
       </div>
     </section>

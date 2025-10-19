@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Status.module.css';
+import './Status.css';
 
 const Status = () => {
   const systems = [
@@ -50,43 +50,43 @@ const Status = () => {
   const getStatusColor = (status) => {
     switch (status.toLowerCase()) {
       case 'operational':
-        return styles.operational;
+        return 'operational';
       case 'resolved':
-        return styles.resolved;
+        return 'resolved';
       case 'completed':
-        return styles.completed;
+        return 'completed';
       case 'degraded':
-        return styles.degraded;
+        return 'degraded';
       default:
-        return styles.unknown;
+        return 'unknown';
     }
   };
 
   return (
-    <div className={styles.status}>
-      <section className={styles.hero}>
+    <div className="status">
+      <section className="hero">
         <h1>System Status</h1>
         <p>Current status of Edora services</p>
       </section>
 
-      <section className={styles.overview}>
-        <div className={styles.statusHeader}>
+      <section className="overview">
+        <div className="statusHeader">
           <h2>All Systems Operational</h2>
-          <span className={styles.timestamp}>
+          <span className="timestamp">
             Last updated: {new Date().toLocaleString()}
           </span>
         </div>
 
-        <div className={styles.systemsGrid}>
+        <div className="systemsGrid">
           {systems.map((system, index) => (
-            <div key={index} className={styles.systemCard}>
-              <div className={styles.systemHeader}>
+            <div key={index} className="systemCard">
+              <div className="systemHeader">
                 <h3>{system.name}</h3>
-                <span className={`${styles.status} ${getStatusColor(system.status)}`}>
+                <span className={`status ${getStatusColor(system.status)}`}>
                   {system.status}
                 </span>
               </div>
-              <div className={styles.systemMeta}>
+              <div className="systemMeta">
                 <span>Uptime: {system.uptime}</span>
               </div>
             </div>
@@ -94,20 +94,20 @@ const Status = () => {
         </div>
       </section>
 
-      <section className={styles.incidents}>
+      <section className="incidents">
         <h2>Recent Incidents</h2>
-        <div className={styles.timeline}>
+        <div className="timeline">
           {incidents.map((incident, index) => (
-            <div key={index} className={styles.incident}>
-              <div className={styles.incidentHeader}>
-                <span className={styles.date}>{incident.date}</span>
+            <div key={index} className="incident">
+              <div className="incidentHeader">
+                <span className="date">{incident.date}</span>
                 <h3>{incident.title}</h3>
-                <span className={`${styles.status} ${getStatusColor(incident.status)}`}>
+                <span className={`status ${getStatusColor(incident.status)}`}>
                   {incident.status}
                 </span>
               </div>
-              <p className={styles.description}>{incident.description}</p>
-              <p className={styles.resolution}>
+              <p className="description">{incident.description}</p>
+              <p className="resolution">
                 <strong>Resolution:</strong> {incident.resolution}
               </p>
             </div>
@@ -115,23 +115,23 @@ const Status = () => {
         </div>
       </section>
 
-      <section className={styles.subscribe}>
+      <section className="subscribe">
         <h2>Subscribe to Updates</h2>
         <p>Get notified about system status changes and maintenance windows.</p>
-        <form className={styles.subscribeForm}>
+        <form className="subscribeForm">
           <input type="email" placeholder="Enter your email" />
           <button type="submit">Subscribe</button>
         </form>
       </section>
 
-      <section className={styles.support}>
+      <section className="support">
         <h2>Need Technical Assistance?</h2>
         <p>Contact our technical team led by Jeet for immediate support.</p>
-        <div className={styles.supportActions}>
-          <a href="/contact" className={styles.primaryButton}>
+        <div className="supportActions">
+          <a href="/contact" className="primaryButton">
             Contact Support
           </a>
-          <a href="/documentation" className={styles.secondaryButton}>
+          <a href="/documentation" className="secondaryButton">
             View Documentation
           </a>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Documentation.module.css';
+import './Documentation.css';
 
 const Documentation = () => {
   const sections = [

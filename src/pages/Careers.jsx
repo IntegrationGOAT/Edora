@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Careers.module.css';
+import './Careers.css';
 
 const Careers = () => {
   const positions = [
